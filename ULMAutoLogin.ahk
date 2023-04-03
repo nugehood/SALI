@@ -10,10 +10,14 @@ Gui, Add, Text, x10 y299 w250 h20 +Center +Theme, Made by Nuge
 Gui, Add, Text, x22 y149 w50 h20 , PASS :
 Gui, Add, GroupBox, x12 y9 w250 h310 , Simari Auto Login V 0.1.1
 Gui, Font, S8 CDefault Bold, Verdana
-Gui, Add, Text, x120 y219 w70 h52 +Center, only work if not already logged in!
+Gui, Add, Button, x112 y225 w90 h20 +, DONATE
 ; Generated using SmartGUI Creator 4.0
 Gui, Show, x449 y88 h340 w275, Simari Auto Login V 0.1.0
 Return
+ButtonDONATE:
+Run, Donate.html
+Return
+
 ButtonLOGIN:
 Gui Submit
 
